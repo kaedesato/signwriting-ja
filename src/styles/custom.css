@@ -101,30 +101,21 @@ fsw-sign, sgnw-sign, fsw-symbol, sgnw-symbol {
   display: inline-block;
   vertical-align: middle;
   padding: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: #ffffff !important; /* 高コントラスト確保のため、常に白背景にする */
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e2e8f0 !important; /* 柔らかいグレーのボーダー */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--sl-color-text) !important; /* フォント色の継承を強制して、ライトモードで白地に白になるのを防止 */
+  color: #000000 !important; /* 常に黒文字にする */
 }
 
-/* Force the SVG outlines inside SignWriting elements to use parent's currentColor/text color */
+/* Force the SVG outlines inside SignWriting elements to use black for high contrast */
 fsw-sign svg, sgnw-sign svg, fsw-symbol svg, sgnw-symbol svg,
 fsw-sign path, sgnw-sign path, fsw-symbol path, sgnw-symbol path,
 fsw-sign .sym-line, sgnw-sign .sym-line, fsw-symbol .sym-line, sgnw-symbol .sym-line,
 fsw-sign::part(svg), sgnw-sign::part(svg), fsw-symbol::part(svg), sgnw-symbol::part(svg),
 fsw-sign::part(path), sgnw-sign::part(path), fsw-symbol::part(path), sgnw-symbol::part(path) {
-  stroke: var(--sl-color-text) !important;
-}
-
-:root[data-theme='light'] fsw-sign, 
-:root[data-theme='light'] sgnw-sign,
-:root[data-theme='light'] fsw-symbol,
-:root[data-theme='light'] sgnw-symbol {
-  background: rgba(15, 23, 42, 0.03);
-  border-color: rgba(15, 23, 42, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  stroke: #000000 !important;
 }
 
 fsw-sign:hover, sgnw-sign:hover, fsw-symbol:hover, sgnw-symbol:hover {
