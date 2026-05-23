@@ -33,7 +33,10 @@ export default defineConfig({
 			customCss: [
 				'./src/styles/custom.css',
 			],
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/sutton-signwriting' }],
+			editLink: {
+				baseUrl: 'https://github.com/kaedesato/signwriting-ja/edit/main/',
+			},
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/kaedesato/signwriting-ja' }],
 			sidebar: [
 				{
 					label: 'はじめに',
