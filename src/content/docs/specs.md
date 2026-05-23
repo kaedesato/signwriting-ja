@@ -69,16 +69,113 @@ M518x529S14c20517x510S27106493x483S20500489x511
 
 これをトークン（意味のあるパーツ）ごとに分解すると、以下のようになります。
 
-| トークン | タイプ | 意味・解説 |
-| :--- | :--- | :--- |
-| **`M`** | 開始子 | **M**aximum (またはSignbox) の開始を表すマーカー。 |
-| **`518x529`** | サインボックスサイズ | この手話文字のキャンバスサイズが「幅 518、高さ 529」であることを示します（基準座標は `500x500` で、そこから周囲に広がります）。 |
-| **`S14c20`** | シンボルキー 1 | `S14c20` というIDを持つ手話文字記号（特定の平手記号）。 |
-| **`517x510`** | 座標 1 | シンボル 1 をキャンバスの座標 `(X: 517, Y: 510)` に配置することを示します。 |
-| **`S27106`** | シンボルキー 2 | `S27106` というIDを持つ記号（特定の動きの矢印）。 |
-| **`493x483`** | 座標 2 | シンボル 2 をキャンバスの座標 `(X: 493, Y: 483)` に配置することを示します。 |
-| **`S20500`** | シンボルキー 3 | `S20500` （タッチを表すアスタリスク `*` のID）。 |
-| **`489x511`** | 座標 3 | シンボル 3 をキャンバスの座標 `(X: 489, Y: 511)` に配置することを示します。 |
+<div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; margin: 1.5rem 0;">
+  
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem;">M</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-violet);">開始子 (Start Marker)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: 開始子<br/>
+        <strong>意味・解説</strong>: <strong>M</strong>aximum (またはSignbox) の開始を表すマーカーです。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem; background: var(--brand-cyan);">518x529</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-cyan);">サインボックスサイズ (Canvas Size)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: サイズ表現<br/>
+        <strong>意味・解説</strong>: この手話文字のキャンバスサイズが「幅 518、高さ 529」であることを示します（基準座標は <code>500x500</code> で、そこから周囲に広がります）。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem;">S14c20</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-violet);">シンボルキー 1 (Symbol Key 1)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: シンボルID<br/>
+        <strong>意味・解説</strong>: <code>S14c20</code> というIDを持つ手話文字記号（特定の平手記号）です。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem; background: var(--brand-cyan);">517x510</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-cyan);">配置座標 1 (Coordinate 1)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: 座標位置<br/>
+        <strong>意味・解説</strong>: シンボル 1 をキャンバスの座標 <code>(X: 517, Y: 510)</code> に配置することを示します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem;">S27106</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-violet);">シンボルキー 2 (Symbol Key 2)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: シンボルID<br/>
+        <strong>意味・解説</strong>: <code>S27106</code> というIDを持つ記号（特定の動きの矢印）です。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem; background: var(--brand-cyan);">493x483</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-cyan);">配置座標 2 (Coordinate 2)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: 座標位置<br/>
+        <strong>意味・解説</strong>: シンボル 2 をキャンバスの座標 <code>(X: 493, Y: 483)</code> に配置することを示します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem;">S20500</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-violet);">シンボルキー 3 (Symbol Key 3)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: シンボルID<br/>
+        <strong>意味・解説</strong>: <code>S20500</code> （タッチを表すアスタリスク <code>*</code> のID）です。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 120px;">
+      <span class="interactive-badge" style="font-size: 1.1rem; padding: 0.4rem 1rem; background: var(--brand-cyan);">489x511</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-cyan);">配置座標 3 (Coordinate 3)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>タイプ</strong>: 座標位置<br/>
+        <strong>意味・解説</strong>: シンボル 3 をキャンバスの座標 <code>(X: 489, Y: 511)</code> に配置することを示します。
+      </p>
+    </div>
+  </div>
+
+</div>
 
 ### シンボルキー (Symbol Key) の詳細構造
 シンボルキー（例：`S14c20`）は、以下のような構造になっています。

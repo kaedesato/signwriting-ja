@@ -50,11 +50,45 @@ graph TD
 
 SignWritingは、大きく分けて以下の3つの身体部位・動作に対応する記号を組み合わせて作られます。
 
-| 記号カテゴリ | 役割 | 具体例 |
-| :--- | :--- | :--- |
-| **手の形 (Handshapes)** | 手の形や指の伸び方、手のひらの向きを表します。 | 握り拳（四角）、平らな手（長方形）など |
-| **動きの記号 (Movements)** | 手や腕の移動軌跡、関節の動き、接触を表します。 | 矢印、アスタリスク（タッチ）、スパイラル（摩擦） |
-| **顔と頭部 (Face & Head)** | 表情、目線、眉の動き、頭の傾きを表します。 | 目線（矢頭）、口の形状、首の傾き（斜線） |
+<div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; margin: 1.5rem 0;">
+  
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 160px;">
+      <span class="interactive-badge" style="font-size: 1rem; padding: 0.35rem 0.85rem;">👐 手の形 (Handshapes)</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-violet);">役割：手の形や指の伸び方、手のひらの向きを記述</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
+        握り拳（四角形）、平らな手（五角形・長方形）、指先を曲げた手（円）など、手話で使われる多様な手のポーズやその向きを正確に表現します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 160px;">
+      <span class="interactive-badge" style="font-size: 1rem; padding: 0.35rem 0.85rem; background: var(--brand-cyan);">🔄 動きの記号 (Movements)</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-cyan);">役割：手や腕の移動軌跡、関節の動き、接触などを記述</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
+        移動方向を示す矢印や、手の接触を表すアスタリスク（タッチ）、こすり合わせるスパイラル（摩擦）など、動的な軌跡や強弱を視覚的に表現します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; min-width: 160px;">
+      <span class="interactive-badge" style="font-size: 1rem; padding: 0.35rem 0.85rem;">😊 顔と頭部 (Face & Head)</span>
+    </div>
+    <div style="flex: 1; min-width: 250px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.2rem; color: var(--brand-violet);">役割：表情、目線、眉の動き、頭の傾きを記述</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
+        手話の文法表現に極めて重要な非手指動作（NMM）を記述します。視線方向を示す矢頭、口の形状（微笑みや丸めるなど）、首の傾き（斜線）を含みます。
+      </p>
+    </div>
+  </div>
+
+</div>
 
 これらのパーツを、手話を実際に行う際の位置関係（頭の周り、胸の前、左右の手の位置関係）の通りに二次元的にレイアウトして、ひとつの「手話文字」が完成します。
 
