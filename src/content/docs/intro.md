@@ -93,3 +93,17 @@ SignWritingは、大きく分けて以下の3つの身体部位・動作に対�
 これらのパーツを、手話を実際に行う際の位置関係（頭の周り、胸の前、左右の手の位置関係）の通りに二次元的にレイアウトして、ひとつの「手話文字」が完成します。
 
 次のセクションからは、これらのパーツの具体的な意味や読み書きのルールを、順番に詳しく学んでいきましょう！
+
+---
+
+<div class="glass-card" style="margin-top: 2rem;">
+  <h4 style="margin-top: 0; color: var(--brand-accent);">🌐 関連リファレンス</h4>
+  <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.75rem; opacity: 0.9;">
+    Sutton式手話文字のさらなる詳細な歴史や国際的な活動、最新のデジタルツールについては、公式ポータルサイトおよび各種関連リソースを参照してください。
+  </p>
+  <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; line-height: 1.6;">
+    <li><a href="https://www.signwriting.org/" target="_blank" rel="noopener noreferrer" style="color: var(--brand-accent); font-weight: bold; text-decoration: underline;">Sutton SignWriting 公式サイト (SignWriting.org)</a></li>
+    <li><a href="https://www.signbank.org/" target="_blank" rel="noopener noreferrer" style="color: var(--brand-accent); font-weight: bold; text-decoration: underline;">SignBank.org (手話記号辞書データベース)</a></li>
+    <li><a href="https://www.signpuddle.org/" target="_blank" rel="noopener noreferrer" style="color: var(--brand-accent); font-weight: bold; text-decoration: underline;">SignPuddle Online (オンライン記号エディタ)</a></li>
+  </ul>
+</div>
