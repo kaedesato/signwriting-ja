@@ -1,0 +1,178 @@
+---
+title: インタラクティブ・サンドボックス
+description: Sutton式手話文字のFSWコードをリアルタイムでプレビューしたり、手形状や動きの記号を選んで自分だけの文字を生成できる実験場です。
+---
+
+ここでは、Sutton式手話文字のコンピュータ用文字データ表現である **FSW (Formal SignWriting)** を使って、リアルタイムに手話文字を描画する実験ができます。
+
+---
+
+## 🎨 リアルタイム・手話文字ジェネレータ
+
+下の入力欄に FSW コードを入力すると、上のプレビューボックスに手話文字が自動でレンダリングされます。プリセットボタンを押して、実際の手話のコードを試してみましょう！
+
+<div class="sandbox-container">
+
+
+  <div class="glass-card" style="text-align: center; padding: 2.5rem; border-radius: 20px; position: relative;">
+    <span class="interactive-badge" style="position: absolute; top: 1rem; left: 1rem; margin: 0;">LIVE PREVIEW</span>
+    
+    <div class="sandbox-preview-box" id="preview-container">
+
+      <fsw-sign id="sandbox-preview" fsw="M518x529S14c20517x510S27106493x483S20500489x511" style="transform: scale(2);"></fsw-sign>
+    </div>
+    
+    <div style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--sl-color-gray-3);">
+      描画方式: <code style="color: var(--brand-cyan);">SVG (Vector Graphics)</code>
+    </div>
+  </div>
+
+
+  <div class="glass-card sandbox-input-box" style="margin: 0;">
+    <h3 style="margin-top: 0; font-family: var(--sl-font-heading); font-size: 1.3rem;">📝 FSWコード入力</h3>
+    <p style="font-size: 0.9rem; color: var(--sl-color-gray-3); margin-bottom: 1rem;">
+      Mから始まるサインボックスコードを入力してください。シンボルの追加や座標の変更に応じて、リアルタイムに位置が調整されます。
+    </p>
+    
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <input 
+        type="text" 
+        id="fsw-input" 
+        value="M518x529S14c20517x510S27106493x483S20500489x511" 
+        style="flex: 1; min-width: 280px; padding: 0.8rem 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); background: rgba(0,0,0,0.3); color: white; font-family: monospace; font-size: 1.1rem;"
+      />
+      <button class="btn-primary" id="copy-btn">コードをコピー</button>
+    </div>
+  </div>
+
+
+  <div class="glass-card" style="margin: 0; padding: 1.5rem;">
+    <h3 style="margin-top: 0; font-family: var(--sl-font-heading); font-size: 1.3rem;">📋 単語プリセット (日本手話例)</h3>
+    <p style="font-size: 0.9rem; color: var(--sl-color-gray-3); margin-bottom: 1rem;">
+      クリックすると、対応する日本手話（JSL）のFSWコードが入力されます。
+    </p>
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+      <button class="btn-secondary preset-word" data-fsw="M518x529S14c20517x510S27106493x483S20500489x511">「手話」</button>
+      <button class="btn-secondary preset-word" data-fsw="M523x542S15a20482x483S15a28503x482S22a04494x525">「文字」</button>
+      <button class="btn-secondary preset-word" data-fsw="M518x522S14720502x506S14720482x506S28a02497x483">「ありがとう」</button>
+      <button class="btn-secondary preset-word" data-fsw="M520x517S10011502x502S10019483x502S20500493x485">「出会い / 友達」</button>
+    </div>
+  </div>
+
+
+  <div class="glass-card" style="margin: 0; padding: 1.5rem;">
+    <h3 style="margin-top: 0; font-family: var(--sl-font-heading); font-size: 1.3rem;">🧩 基本シンボル別プリセット</h3>
+    <p style="font-size: 0.9rem; color: var(--sl-color-gray-3); margin-bottom: 1.2rem;">
+      SignWritingの基本となる個別パーツ単体のFSWコードをロードします。構造の学習にご利用ください。
+    </p>
+
+
+    <h4 style="color: var(--brand-violet); margin-bottom: 0.5rem; font-size: 1rem;">1. 手形状パーツ</h4>
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S10000495x495" title="握り拳">
+        <fsw-symbol symbol="S10000" style="pointer-events: none;"></fsw-symbol> 握り拳 (S10000)
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S10e00495x495" title="開いた拳">
+        <fsw-symbol symbol="S10e00" style="pointer-events: none;"></fsw-symbol> 開いた拳 (S10e00)
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S10110495x495" title="人差し指">
+        <fsw-symbol symbol="S10110" style="pointer-events: none;"></fsw-symbol> 人差し指 (S10110)
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S14c00495x495" title="平手">
+        <fsw-symbol symbol="S14c00" style="pointer-events: none;"></fsw-symbol> 平らな手 (S14c00)
+      </button>
+    </div>
+
+
+    <h4 style="color: var(--brand-cyan); margin-bottom: 0.5rem; font-size: 1rem;">2. 接触・動きパーツ</h4>
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S20500495x495" title="タッチ">
+        <fsw-symbol symbol="S20500" style="pointer-events: none;"></fsw-symbol> タッチ (*)
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S20600495x495" title="握る">
+        <fsw-symbol symbol="S20600" style="pointer-events: none;"></fsw-symbol> つかむ (x)
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S22a00495x495" title="壁矢印">
+        <fsw-symbol symbol="S22a00" style="pointer-events: none;"></fsw-symbol> 壁面矢印 (↑)
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S22a10495x495" title="床矢印">
+        <fsw-symbol symbol="S22a10" style="pointer-events: none;"></fsw-symbol> 床面矢印 (前向き)
+      </button>
+    </div>
+
+
+    <h4 style="color: var(--brand-violet); margin-bottom: 0.5rem; font-size: 1rem;">3. 顔・頭部パーツ</h4>
+    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S2e300495x495" title="頭部円">
+        <fsw-symbol symbol="S2e300" style="pointer-events: none;"></fsw-symbol> 首の傾き頭部円
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S2e500495x495" title="眉上げ">
+        <fsw-symbol symbol="S2e500" style="pointer-events: none;"></fsw-symbol> 眉を上げる
+      </button>
+      <button class="btn-secondary preset-symbol" data-fsw="M505x505S2e700495x495" title="微笑む口">
+        <fsw-symbol symbol="S2e700" style="pointer-events: none;"></fsw-symbol> 微笑む口
+      </button>
+    </div>
+  </div>
+
+</div>
+
+
+<script>{`
+  // DOM取得
+  const fswInput = document.getElementById('fsw-input');
+  const sandboxPreview = document.getElementById('sandbox-preview');
+  const copyBtn = document.getElementById('copy-btn');
+  const presetWords = document.querySelectorAll('.preset-word');
+  const presetSymbols = document.querySelectorAll('.preset-symbol');
+
+  // 入力監視とリアルタイム更新
+  fswInput.addEventListener('input', (e) => {
+    const code = e.target.value.trim();
+    if (code) {
+      sandboxPreview.setAttribute('fsw', code);
+    }
+  });
+
+  // 単語プリセット処理
+  presetWords.forEach(button => {
+    button.addEventListener('click', () => {
+      const fsw = button.getAttribute('data-fsw');
+      fswInput.value = fsw;
+      sandboxPreview.setAttribute('fsw', fsw);
+      
+      // クリックフィードバック用アニメーション
+      button.style.transform = 'scale(0.95)';
+      setTimeout(() => button.style.transform = 'scale(1)', 100);
+    });
+  });
+
+  // シンボルプリセット処理
+  presetSymbols.forEach(button => {
+    button.addEventListener('click', () => {
+      const fsw = button.getAttribute('data-fsw');
+      fswInput.value = fsw;
+      sandboxPreview.setAttribute('fsw', fsw);
+      
+      button.style.transform = 'scale(0.95)';
+      setTimeout(() => button.style.transform = 'scale(1)', 100);
+    });
+  });
+
+  // コピー処理
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(fswInput.value).then(() => {
+      const originalText = copyBtn.innerText;
+      copyBtn.innerText = 'コピー完了！';
+      copyBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)'; // 緑色グラデーション
+      
+      setTimeout(() => {
+        copyBtn.innerText = originalText;
+        copyBtn.style.background = ''; // デフォルトに戻す
+      }, 2000);
+    }).catch(err => {
+      console.error('コピー失敗:', err);
+      alert('コピーに失敗しました。お手数ですが手動で選択してコピーしてください。');
+    });
+  });
+`}</script>

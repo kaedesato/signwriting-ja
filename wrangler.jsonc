@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "signwriting-ja", // Cloudflare Pages のプロジェクト名になります
+
+  // ビルドされた静的ファイルが出力されるフォルダを指定します（Astroの場合は ./dist です）
+  "pages_build_output_dir": "./dist",
+
+  // Cloudflare のランタイム互換日付を指定します
+  "compatibility_date": "2026-05-23",
+
+  // 必要に応じて Node.js の互換ライブラリフラグを有効にします
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+
+  // 環境変数が必要な場合はここに定義します
+  "vars": {
+    "NODE_VERSION": "20"
+  }
+}

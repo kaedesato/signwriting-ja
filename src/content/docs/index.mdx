@@ -1,0 +1,57 @@
+---
+title: Sutton式手話文字 (SignWriting)
+description: 手話の「手の形」「向き」「動き」「表情」を視覚的な記号で記述する、世界標準の手話表記法（SignWriting）の日本語解説サイトです。
+template: splash
+hero:
+  tagline: 手話をそのまま書き残す、世界標準のビジュアル記号システム。
+  actions:
+    - text: 入門解説を読む
+      link: /intro/
+      icon: right-arrow
+      variant: primary
+    - text: 技術仕様 (Unicode / FSW)
+      link: /specs/
+      icon: document
+    - text: サンドボックスで遊ぶ
+      link: /sandbox/
+      icon: rocket
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="glass-card" style="text-align: center; max-width: 500px; margin: 3rem auto; padding: 2rem; border-radius: 20px;">
+  <span class="interactive-badge">LIVE VECTOR PREVIEW</span>
+  <h3 style="margin-top: 1rem; font-family: var(--sl-font-heading); font-size: 1.6rem; font-weight: 600;">手書き記号がそのまま美しいテキストに</h3>
+  <p style="font-size: 0.95rem; color: var(--sl-color-gray-3); margin-bottom: 2rem; line-height: 1.6;">
+    画像ファイルではなく、Unicode文字とFSW（Formal SignWriting）文字列をブラウザ側でリアルタイムに自動レンダリングしています。
+  </p>
+  
+  <div style="display: flex; justify-content: center; gap: 3rem; margin: 2rem 0;">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+      <fsw-sign fsw="M518x529S14c20517x510S27106493x483S20500489x511" style="transform: scale(1.3);"></fsw-sign>
+      <span style="font-size: 1.1rem; color: var(--sl-color-accent); font-weight: 600; margin-top: 0.5rem;">「手話」</span>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+      <fsw-sign fsw="M523x542S15a20482x483S15a28503x482S22a04494x525" style="transform: scale(1.3);"></fsw-sign>
+      <span style="font-size: 1.1rem; color: var(--sl-color-accent); font-weight: 600; margin-top: 0.5rem;">「文字」</span>
+    </div>
+  </div>
+</div>
+
+## SignWriting の特徴
+
+<CardGrid stagger>
+	<Card title="手話のビジュアル文字体系" icon="open-book">
+		話し言葉の文字が音を表すのに対し、手話の「手の形」「向き」「位置」「動き」「顔の表情」をそのまま二次元のグラフィック記号として書き表します。
+	</Card>
+	<Card title="あらゆる手話に対応する世界規格" icon="approve-list">
+		アメリカ手話（ASL）や日本手話（JSL）など、特定の言語に依存せず、世界中のあらゆる手話言語を全く同じ記号規則（ISWA 2010）で記述できます。
+	</Card>
+	<Card title="Unicode との完全な互換性" icon="setting">
+		Unicode 8.0にて標準ブロックとして登録。FSW（Formal SignWriting）仕様により、データベースや検索エンジンでも処理可能なテキストデータとして扱えます。
+	</Card>
+	<Card title="Webでのクリアな描画" icon="sun">
+		公式コンポーネントを導入することで、画像アセット不要でベクター画像（SVG）として拡大縮小自在に手話文字を描画できます。
+	</Card>
+</CardGrid>
