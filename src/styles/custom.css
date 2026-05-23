@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SignWriting&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@300;400;700&family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SignWriting&display=swap');
 
 
 :root {
   /* Fonts */
-  --sl-font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --sl-font-heading: 'Outfit', sans-serif;
+  --sl-font-sans: 'LINE Seed JP', 'Inter', system-ui, -apple-system, sans-serif;
+  --sl-font-heading: 'LINE Seed JP', 'Outfit', sans-serif;
 
   /* Brand colors */
   --brand-violet: #8b5cf6;
@@ -107,6 +107,15 @@ fsw-sign, sgnw-sign, fsw-symbol, sgnw-symbol {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--sl-color-text) !important; /* フォント色の継承を強制して、ライトモードで白地に白になるのを防止 */
+}
+
+/* Force the SVG outlines inside SignWriting elements to use parent's currentColor/text color */
+fsw-sign svg, sgnw-sign svg, fsw-symbol svg, sgnw-symbol svg,
+fsw-sign path, sgnw-sign path, fsw-symbol path, sgnw-symbol path,
+fsw-sign .sym-line, sgnw-sign .sym-line, fsw-symbol .sym-line, sgnw-symbol .sym-line,
+fsw-sign::part(svg), sgnw-sign::part(svg), fsw-symbol::part(svg), sgnw-symbol::part(svg),
+fsw-sign::part(path), sgnw-sign::part(path), fsw-symbol::part(path), sgnw-symbol::part(path) {
+  stroke: var(--sl-color-text) !important;
 }
 
 :root[data-theme='light'] fsw-sign, 

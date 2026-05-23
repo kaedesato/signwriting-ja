@@ -33,15 +33,15 @@ SignWritingにおける数百種類の手の形は、すべて以下の**3つの
 
 | 形状分類 | 記号 | 手話での意味 | 実際の例 |
 | :--- | :--- | :--- | :--- |
-| **握り拳 (Closed Fist)** | <fsw-symbol symbol="S10000" style="transform:scale(1.2);"></fsw-symbol> (正方形) | 指先が手のひらに強く触れている形 | アルファベットの **S** や 数字の **1** |
-| **開いた拳 (Open Fist)** | <fsw-symbol symbol="S10e00" style="transform:scale(1.2);"></fsw-symbol> (円) | 指先同士が触れ合って中に丸い空間ができる形 | アルファベットの **O** や **D** |
-| **平らな手 (Flat Hand)** | <fsw-symbol symbol="S14c00" style="transform:scale(1.2);"></fsw-symbol> (長方形) | すべての指がまっすぐに伸びて揃っている形 | アルファベットの **B** や 数字の **5** |
+| **握り拳 (Closed Fist)** | <fsw-symbol symbol="S10000" style="transform:scale(1.2);"></fsw-symbol> (正方形) | 指先が手のひらに強く触れている形 | 日本手話の指文字 **「さ」** や、手話単語 **「力（ちから）」** |
+| **開いた拳 (Open Fist)** | <fsw-symbol symbol="S10e00" style="transform:scale(1.2);"></fsw-symbol> (円) | 指先同士が触れ合って中に丸い空間ができる形 | 日本手話の指文字 **「お」** |
+| **平らな手 (Flat Hand)** | <fsw-symbol symbol="S14c00" style="transform:scale(1.2);"></fsw-symbol> (長方形) | すべての指がまっすぐに伸びて揃っている形 | 日本手話の指文字 **「て」** や、手話単語 **「手話（しゅわ）」** |
 
 ### 指を描き足す例
 基本の形に指を表す線を加えることで、様々な手の形を直感的に表現します。
-- <fsw-symbol symbol="S10000"></fsw-symbol> (握り拳) ＋ 上に1本の線 ＝ <fsw-symbol symbol="S10110"></fsw-symbol> **「人差し指を立てた手 (Index Hand)」**
-- <fsw-symbol symbol="S14c00"></fsw-symbol> (平らな手) ＋ 横に親指の線 ＝ <fsw-symbol symbol="S14c00"></fsw-symbol> **「親指を横に張った平手」**
-- <fsw-symbol symbol="S10000"></fsw-symbol> (握り拳) ＋ 5本の線 ＝ <fsw-symbol symbol="S18700"></fsw-symbol> **「5本の指を広げた手 (5-Hand)」**
+- <fsw-symbol symbol="S10000"></fsw-symbol> (握り拳) ＋ 上に1本の線 ＝ <fsw-symbol symbol="S10110"></fsw-symbol> **「人差し指を立てた手」**（日本手話の指文字 **「り」** や、手話単語 **「私」** など）
+- <fsw-symbol symbol="S10000"></fsw-symbol> (握り拳) ＋ 小指の線 ＝ <fsw-symbol symbol="S10610"></fsw-symbol> **「小指を立てた手」**（日本手話の指文字 **「い」** や、手話単語 **「彼女／女性」** など）
+- <fsw-symbol symbol="S10000"></fsw-symbol> (握り拳) ＋ 5本の線 ＝ <fsw-symbol symbol="S18700"></fsw-symbol> **「5本の指を広げた手」**（ジャンケンの **「パー」** や、手話単語 **「多い」** など）
 
 ---
 
