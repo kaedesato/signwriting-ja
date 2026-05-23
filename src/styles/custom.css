@@ -105,6 +105,7 @@ fsw-sign, sgnw-sign, fsw-symbol, sgnw-symbol {
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--sl-color-text) !important; /* フォント色の継承を強制して、ライトモードで白地に白になるのを防止 */
 }
 
 :root[data-theme='light'] fsw-sign, 

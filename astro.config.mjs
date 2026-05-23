@@ -39,6 +39,7 @@ export default defineConfig({
 					label: 'はじめに',
 					items: [
 						{ label: 'SignWritingとは？', slug: 'intro' },
+						{ label: 'フォントのインストール', slug: 'font-installation' },
 					],
 				},
 				{
