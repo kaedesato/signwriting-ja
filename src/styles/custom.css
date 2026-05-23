@@ -107,6 +107,11 @@ fsw-sign, sgnw-sign, fsw-symbol, sgnw-symbol {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000 !important; /* 常に黒文字にする */
+  
+  /* 記号をグローバルで1.4倍に拡大して見やすく調整 */
+  transform: scale(1.4);
+  margin: 0.6rem 0.9rem; /* 拡大による周囲の文字との重なりを防ぐマージン */
+  transform-origin: center;
 }
 
 /* Force the SVG outlines inside SignWriting elements to use black for high contrast */
@@ -119,9 +124,9 @@ fsw-sign::part(path), sgnw-sign::part(path), fsw-symbol::part(path), sgnw-symbol
 }
 
 fsw-sign:hover, sgnw-sign:hover, fsw-symbol:hover, sgnw-symbol:hover {
-  transform: scale(1.06);
-  border-color: var(--brand-cyan);
-  box-shadow: 0 5px 15px rgba(6, 182, 212, 0.25);
+  transform: scale(1.55);
+  border-color: var(--brand-cyan) !important;
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.25) !important;
 }
 
 /* Interactive elements */
