@@ -13,8 +13,8 @@ description: "Sutton式手話文字における最も基本的なルールであ
 
 <div class="glass-card" style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
   <div style="flex: 1; min-width: 250px;">
-    <h4 style="margin-top:0; color: var(--brand-violet);">👤 鏡視点（受信者視点）との違い</h4>
-    <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0;">
+    <h4 style="margin-top:0; color: var(--brand-accent);">👤 鏡視点（受信者視点）との違い</h4>
+    <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 0; opacity: 0.9;">
       対面で他の人がサインしているのを観察する視点は「受信者視点」と呼ばれます。しかし、SignWritingの標準表記法は<strong>「表現者視点」</strong>です。これは、自分が手話を行うときに、自分の手がどう見えているか、どう感じられているかを表します。
     </p>
   </div>
@@ -68,7 +68,7 @@ description: "Sutton式手話文字における最も基本的なルールであ
 例えば、右手の指先が右頬に触れる場合、手話文字の中では手の記号は頭部円の**右側**に配置され、接触記号が添えられます。
 
 * **接触の記述例**：
-  * **右側の接触**：頭部円の右側に手を配置 <fsw-symbol symbol="S2e500" style="transform:scale(1.0);"></fsw-symbol> + 接触記号。
+  * **右側の接触**：頭部円の右側に手を配置 <fsw-symbol symbol="S2e300" style="transform:scale(1.0);"></fsw-symbol> + 接触記号 <fsw-symbol symbol="S20500"></fsw-symbol>。
   * **左側の接触**：頭部円の左側に手を配置。
 
 ---

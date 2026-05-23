@@ -14,10 +14,12 @@ SignWritingでは、手が単に垂直（壁面）または水平（床面）に
 * **手元の表現**：手のひらの根本（Heel of Hand）や、前方を向いた第3関節（Knuckles）が強調されます。
 * **記号の隙間**：指の付け根に隙間を入れ、手の向きが手前（自分）から奥（相手）へ真っ直ぐ突き出ていることを示します。
 
-```
-【例】
-指先が完全に正面（奥）を向き、手のひらが下を向いた床プレーン状態： <fsw-symbol symbol="S14c10" style="transform:scale(1.3);"></fsw-symbol>
-```
+<div style="display: flex; gap: 1rem; align-items: center; margin: 1.5rem 0;">
+  <fsw-symbol symbol="S14c10" style="transform:scale(1.8);"></fsw-symbol>
+  <p style="margin: 0; font-size: 0.95rem;">
+    指先が完全に正面（奥）を向き、手のひらが下を向いた床プレーン状態の平手（指の根元に Horizon Line の隙間が空いています）。
+  </p>
+</div>
 
 ---
 
@@ -28,7 +30,7 @@ SignWritingでは、手が単に垂直（壁面）または水平（床面）に
 * **顔を指す方向 (Directed Towards Face)**：
   指先が自分の顔や胸に向いている状態。手のひらを示す中空（白色）などの記号を組み合わせます。
 * **上を指す方向 (Directed Up)**：
-  指先が空（上）を指している状態。壁プレーンで標準的に描かれます。
+  指先が空（上）を指している状態。壁プレーンで標準的に描かれます（例：<fsw-symbol symbol="S14c00"></fsw-symbol>）。
 * **外を指す方向 (Directed Out / Away)**：
   指先が相手や横の壁など、身体の外側へ向けて伸びている状態。
 
@@ -41,8 +43,8 @@ SignWritingでは、手が単に垂直（壁面）または水平（床面）に
 SignWritingの公式ガイドラインでは、**「迷ったら、よりシンプルな壁プレーン（隙間のない記号）を優先して記述する」**ことが推奨されています。記号が複雑になりすぎず、素早く読み取ることができるためです。
 
 <div class="glass-card">
-  <h4 style="margin-top: 0; color: var(--brand-cyan);">💡 記述のシンプルルール</h4>
-  <p style="margin-bottom: 0; font-size: 0.95rem; line-height: 1.6;">
+  <h4 style="margin-top: 0; color: var(--brand-accent);">💡 記述のシンプルルール</h4>
+  <p style="margin-bottom: 0; font-size: 0.95rem; line-height: 1.6; opacity: 0.9;">
     床プレーンの「隙間がある記号」は、水平方向の平坦さや前後運動を明示したい場合にのみ使用し、それ以外の単なる左右の指し示しには「隙間のない壁プレーン記号」を選択するのが、綺麗で読みやすい文字を書くコツです。
   </p>
 </div>

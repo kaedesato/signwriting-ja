@@ -11,14 +11,18 @@ description: "手話を行う3次元的な空間の捉え方である「壁プ�
 
 手話で手を置く空間は、大きく分けて以下の2つの面（プレーン）に整理されます。
 
-* **壁プレーン (Wall Plane - 垂直面)**：
-  * 手が**自分の目の前の壁（または自分の胸）と平行**になっている面。
-  * 指先は「上」「下」「左」「右」のいずれかを向きます。
-  * 手の記号は、隙間なく地続きのままで描かれます（例：<fsw-symbol symbol="S14c00"></fsw-symbol>）。
-* **床プレーン (Floor Plane - 水平面)**：
-  * 手が**テーブルや床と平行**になっている面。
-  * 指先は「前方（相手の方向）」や「真後ろ」など、奥行きを指します。
-  * **地平線の隙間（Horizon Line）**：床プレーンを示すため、記号の指の付け根に**「隙間（切り込み）」**が入った状態で描かれます（例：<fsw-symbol symbol="S14c10"></fsw-symbol>）。
+<div style="display: flex; gap: 1.5rem; justify-content: center; margin: 2rem 0; flex-wrap: wrap;">
+  <div class="glass-card" style="text-align: center; width: 220px; margin: 0;">
+    <div style="font-size: 2rem; margin-bottom: 0.5rem;"><fsw-symbol symbol="S14c00" style="transform:scale(1.5);"></fsw-symbol></div>
+    <span class="interactive-badge">壁プレーン (Wall Plane)</span>
+    <p style="font-size: 0.85rem; margin-top: 0.5rem; line-height: 1.5;">手が<strong>自分の目の前の壁と平行</strong>になっている面。隙間のない標準的な記号で描かれます。</p>
+  </div>
+  <div class="glass-card" style="text-align: center; width: 220px; margin: 0;">
+    <div style="font-size: 2rem; margin-bottom: 0.5rem;"><fsw-symbol symbol="S14c10" style="transform:scale(1.5);"></fsw-symbol></div>
+    <span class="interactive-badge">床プレーン (Floor Plane)</span>
+    <p style="font-size: 0.85rem; margin-top: 0.5rem; line-height: 1.5;">手が<strong>テーブルや床と平行</strong>になっている面。指の付け根に<strong>地平線の隙間（Horizon Line）</strong>が入ります。</p>
+  </div>
+</div>
 
 ---
 
@@ -29,26 +33,26 @@ description: "手話を行う3次元的な空間の捉え方である「壁プ�
 <div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; padding: 1.5rem;">
   
   <div style="display: flex; gap: 2rem; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px; font-size: 2rem; color: var(--brand-violet);">
-      ➡️⬛
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S22a00" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
     </div>
     <div style="flex: 1; min-width: 250px;">
-      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-violet);">① 右手の動き (Right Hand Movement)</h4>
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">① 右手の動き (Right Hand Movement)</h4>
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
-        <strong>矢頭のデザイン</strong>：中身が塗りつぶされた<strong>「黒い矢頭」</strong>（または濃い色）を使用します。<br/>
+        <strong>矢頭のデザイン</strong>：中身が塗りつぶされた<strong>「黒い矢頭」</strong>を使用します。<br/>
         <strong>意味</strong>：右手が主導して動いていることを表します。
       </p>
     </div>
   </div>
 
   <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px; font-size: 2rem; color: var(--brand-cyan);">
-      ➡️⬜
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S22a08" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
     </div>
     <div style="flex: 1; min-width: 250px;">
-      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-cyan);">② 左手の動き (Left Hand Movement)</h4>
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">② 左手の動き (Left Hand Movement)</h4>
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
-        <strong>矢頭のデザイン</strong>：中身が中空の<strong>「白い（輪郭のみの）矢頭」</strong>を使用します。<br/>
+        <strong>矢頭のデザイン</strong>：中身が中空の<strong>「白い矢頭」</strong>を使用します。<br/>
         <strong>意味</strong>：左手が主導して動いていることを表します。
       </p>
     </div>
@@ -65,9 +69,7 @@ description: "手話を行う3次元的な空間の捉え方である「壁プ�
 空間は垂直と水平だけでなく、斜め方向にも広がっています。
 
 * **斜め上昇・降下 (Diagonal Movement)**：
-  飛行機が離陸するように、手前下から奥上へ斜めに移動する動きは、**「二重線のステム（矢の軸）」**を持つ特別な矢印で表現されます。
-* **地平線との交差**：
-  軸線上に水平な交差線を入れることで、「空間の斜め方向の奥行き」を数学的に分かりやすく表現します。
+  飛行機が離陸するように、手前下から奥上へ斜めに移動する動きは、**「二重線のステム（矢の軸）と交差線」**を持つ特別な矢印 <fsw-symbol symbol="S22a20" style="transform:scale(1.3);"></fsw-symbol> で表現されます。
 
 ---
 

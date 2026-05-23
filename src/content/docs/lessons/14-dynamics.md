@@ -11,27 +11,44 @@ description: "動作のスピード（素早く、ゆっくり）、緊張感（
 
 動きの矢印の近くに小さな修飾記号を添えることで、動きの質感を指定します。
 
-* **素早い・鋭い動き (Fast/Sharp)**：
-  矢印の近くに**「小さなアキュートアクセントのような斜線」**を添えます。素早くシュッと動かすニュアンスです。
-* **ゆっくりした・なめらかな動き (Slow/Smooth)**：
-  矢印の近くに**「波線」**やゆったりしたマークを配置します。
-* **緊張・強い動き (Tense/Strong)**：
-  動きの開始点や終了点に力を込めるストッパーマークを配します。
+<div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; padding: 1.5rem;">
+
+  <div style="display: flex; gap: 2rem; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S2fb00" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">① 素早い・鋭い動き (Fast/Sharp)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：小さな鋭い斜線（アキュートアクセント型）<br/>
+        <strong>意味</strong>：動きを素早く、勢いよく「シュッ」と完結させる質感を表します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S2fb10" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">② ゆっくりした・なめらかな動き (Slow/Smooth)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：小さなうねり波線<br/>
+        <strong>意味</strong>：力を入れずにゆっくり、流れるようになめらかに動かす質感を表します。
+      </p>
+    </div>
+  </div>
+
+</div>
 
 ---
 
 ## 2. 同時動作線 (Simultaneous Line)
 
-手話では、「右手で〇〇というサインをしながら、同時に左手をキープする」、あるいは「手を動かしながら同時に頭を激しく振る」というように、**複数の動作が時間的に完全に重なって行われる**ことが日常茶飯事です。
+手話では、「右手である動作をキープしながら、同時に左手で別の動作を行う」といった、**複数の動作が完全に同じタイミングで行われる**ことがあります。
 
-* **同時線 (Simultaneous Line)**：
-  重なって行われるパーツの間に、**「横方向の細い二重スパン線」**を引くことで、「これらの動作は時間順（時系列）ではなく、完全に同時に行うものである」という構造を示します。
-
----
-
-## 3. ユニット結合線 (Unit-Connecting Line)
-
-複数の記号（例えば、手と顔）が一体となって一つの動的なまとまり（ユニット）を作っていることを示すために、パーツ同士を細い線で結びつける場合があります。
+* **同時動作線 (Simultaneous Line)**：
+  重なって行われるパーツの間に、**「細い横方向の二本平行スパン線」** <fsw-symbol symbol="S38b00" style="transform:scale(1.2);"></fsw-symbol> を引くことで、「これらの動作は同時である」という構造を示します。
 
 ---
 

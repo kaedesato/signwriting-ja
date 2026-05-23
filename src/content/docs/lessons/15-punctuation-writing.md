@@ -13,16 +13,39 @@ SignWritingの究極のゴールは、単発の手話単語を記述すること
 
 話し言葉の「。」や「、」に相当する、手話文章の区切り記号です。
 
-* **ピリオド（文の終わり - Period）**：
-  * **記号**：縦に並ぶ太い**「二重縦線」** <fsw-symbol symbol="S38700" style="transform:scale(1.2);"></fsw-symbol>。
-  * **意味**：文全体の完全な終了（明確な休止と、両手をニュートラルポジションに戻す動作）を表します。
-* **コンマ（節の区切り - Comma）**：
-  * **記号**：縦方向の**「一重縦線」** <fsw-symbol symbol="S38800" style="transform:scale(1.2);"></fsw-symbol>。
-  * **意味**：文の中での一時的なポーズ（息継ぎや、意味の区切り）を表します。
+<div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; padding: 1.5rem;">
+
+  <div style="display: flex; gap: 2rem; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S38700" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">① ピリオド / 終止符 (Period)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：太い二重の縦線バー<br/>
+        <strong>意味</strong>：文全体の完全な終了（両手をニュートラルな位置に戻し、休止する動き）を表します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S38800" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">② コンマ / 読点 (Comma)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：細い一重の縦線バー<br/>
+        <strong>意味</strong>：文中の節の区切りや、一時的な休止・息継ぎを表します。
+      </p>
+    </div>
+  </div>
+
+</div>
 
 ---
 
-## 2. 縦書きスクロール of 標準ルール (Vertical Column Writing)
+## 2. 縦書きスクロールの標準ルール (Vertical Column Writing)
 
 手話の文章を書く際、SignWritingでは伝統的に**「縦書き（トップからボトムへ）」**が標準表記法となっています。
 

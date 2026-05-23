@@ -14,14 +14,14 @@ SignWritingでは、表情を**10個の部位カテゴリ**に分けて厳密に
 <div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; padding: 1.5rem;">
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-violet);">1. 額 (Forehead)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">1. 額 (Forehead)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">額にしわを寄せる動きなど。考え込んでいる様子や緊張を表します。</p>
     </div>
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-cyan);">2. 眉 (Eyebrows)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">2. 眉 (Eyebrows)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
         手話文法で最重要のパーツです。<br/>
@@ -32,35 +32,35 @@ SignWritingでは、表情を**10個の部位カテゴリ**に分けて厳密に
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-violet);">3. 目 (Eyes)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">3. 目 (Eyes)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">目を大きく見開く（驚き・強調）<fsw-symbol symbol="S2e600" style="transform:scale(0.9); margin:0;"></fsw-symbol>、細める・閉じる（丁寧、疑念）<fsw-symbol symbol="S2e620" style="transform:scale(0.9); margin:0;"></fsw-symbol>、ウィンクなど。</p>
     </div>
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-cyan);">4. 視線 (Eyegaze)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">4. 視線 (Eyegaze)</div>
     <div style="flex: 1; min-width: 250px;">
-      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">目のパーツ近くに配置するドットや小さな矢頭で、視線が「上」「下」「対象物」のどこを向いているか（三人称の指示空間など）を示します。</p>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">目のパーツ近くに配置するドットや小さな矢頭で、視線が「上」「下」「対象物」のどこを向いているかを示します。</p>
     </div>
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-violet);">5. 頬 (Cheeks)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">5. 頬 (Cheeks)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">頬を膨らませる（たくさん、重い、強調）、頬をすぼめる（薄い、小さい）などの程度修飾。</p>
     </div>
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-cyan);">6. 呼吸・鼻 (Nose)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">6. 呼吸・鼻 (Nose)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">鼻をすぼめる、鼻で息を吹き出すなどの微妙な動作表現。</p>
     </div>
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-violet);">7. 口 (Mouth)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">7. 口 (Mouth)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
         マウシング（日本語の口型）や副詞的意味を担います。<br/>
@@ -72,21 +72,21 @@ SignWritingでは、表情を**10個の部位カテゴリ**に分けて厳密に
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-cyan);">8. 舌 (Tongue)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">8. 舌 (Tongue)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">舌を突き出す（うっかり、やっとのことで）、舌を歯と唇の間に入れるなど、非常に細かいニュアンス表現。</p>
     </div>
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1rem; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-violet);">9. 歯 (Teeth)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">9. 歯 (Teeth)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">上の歯で下唇を噛む、歯を剥き出しにするなど、特定の口型（日本語の「ふ」や英語の「f」に似た口型）を記述します。</p>
     </div>
   </div>
 
   <div style="display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap;">
-    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-cyan);">10. 顎 (Chin)</div>
+    <div style="flex-shrink: 0; width: 100px; font-weight: bold; color: var(--brand-accent);">10. 顎 (Chin)</div>
     <div style="flex: 1; min-width: 250px;">
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">顎を前に突き出す（挑発、強調）、顎を引く（かしこまる、驚き）など。</p>
     </div>

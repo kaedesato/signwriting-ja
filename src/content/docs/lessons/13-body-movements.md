@@ -9,12 +9,37 @@ description: "身体全体の傾きや揺れ、肩の上下・ねじりといっ
 
 ## 1. 肩の記号と動作 (Shoulder Movements)
 
-肩のラインは、手話文字の最下部に**「水平な横一文字のバー（鎖骨ライン）」**として描かれます。
+肩のラインは、手話文字の最下部に**「水平な横一文字のバー（鎖骨ライン）」**として描かれます（例：<fsw-symbol symbol="S2e900"></fsw-symbol>）。
 
-* **肩を上げる (Raise Shoulder)**：
-  横線の片側または両端を上に跳ね上げるように描き、肩をすくめているポーズを表現します。
-* **肩のねじり (Shoulder Twist)**：
-  肩ラインを斜めに描いたり、肩の前後運動を示す回転マークを添えることで、身体を少し斜めに構えている状態を表します。
+<div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; padding: 1.5rem;">
+
+  <div style="display: flex; gap: 2rem; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S2e910" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">① 肩を上げる (Raise Shoulder)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：鎖骨バーの端が上に折れ曲がった形<br/>
+        <strong>意味</strong>：肩をすくめる、または片側の肩を上に引き上げるポーズを表します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S2e920" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">② 肩をねじる (Shoulder Twist)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：前後への肩の回転を示す円状インジケータ付きバー<br/>
+        <strong>意味</strong>：身体を少し斜めにひねって構え、立体的な前後関係を作る動作を表します。
+      </p>
+    </div>
+  </div>
+
+</div>
 
 ---
 
@@ -24,8 +49,8 @@ description: "身体全体の傾きや揺れ、肩の上下・ねじりといっ
 
 * **ロールシフト (Role Shift)**：
   物語の中で「おじいさん役」と「子供役」を演じ分ける際、身体を少し右にひねって話し、次に左にひねって話すことで発話者を交代させます。
-* **傾き記号**：
-  最下部にある胴体バーや、体全体の軸線の傾きを示すことで、「上半身がどの方向に傾いているか」を直感的にレイアウトします。
+* **上半身の傾き記号**：
+  最下部に胴体の位置を示すバー記号 <fsw-symbol symbol="S2ea00" style="transform:scale(1.2);"></fsw-symbol> を配置することで、上半身全体の空間的なシフトや物理的傾きを明示します。
 
 ---
 

@@ -12,11 +12,9 @@ description: "頭部そのものの傾きや、うなずき、横振りといっ
 頭部（頭全体）を記述する「頭部円」には、角度によっていくつかの表記バリエーションがあります。
 
 * **後頭部視点 (Rear/Back View)**：
-  標準となるシンプルな円 <fsw-symbol symbol="S2e300" style="transform:scale(1.0);"></fsw-symbol>。表現者自身の頭を後ろから透かして見ている構図です。
+  標準となるシンプルな円 <fsw-symbol symbol="S2e300" style="transform:scale(1.2);"></fsw-symbol>。表現者自身の頭を後ろから透かして見ている構図です。
 * **横顔視点 (Side View)**：
   顔が完全に横（右または左）を向いている状態。鼻の突起のような記号が円の左右どちらかに突き出します。
-* **正面視点 (Front View)**：
-  一部の辞書などで対面状態を明示的に記述する際に用いられます。
 
 ---
 
@@ -35,8 +33,35 @@ description: "頭部そのものの傾きや、うなずき、横振りといっ
 
 首を縦に振る（肯定のうなずき）、首を横に振る（否定）、頭を前に突き出すなどの動きです。
 
-* **動きのダブルライン**：
-  頭部円のすぐ隣に、**「下向きの二重線矢印」**（深くうなずく）や**「左右の小さなジグザグ矢印」**（頭を横に振る）を配置し、頭自体の物理的ダイナミズムを表現します。
+<div class="glass-card" style="display: flex; flex-direction: column; gap: 1.5rem; padding: 1.5rem;">
+
+  <div style="display: flex; gap: 2rem; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 1.5rem; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S2eb00" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">① うなずく (Nod)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：下向きの波型・二重線矢印<br/>
+        <strong>意味</strong>：深く縦に首を振るうなずき（肯定や承認のイントネーション）を表します。
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+    <div style="flex-shrink: 0; display: flex; justify-content: center; width: 80px;">
+      <fsw-symbol symbol="S2eb10" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">② 首を横に振る (Shake)</h4>
+      <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+        <strong>記号</strong>：左右を指す小さな揺れ矢印<br/>
+        <strong>意味</strong>：首を横に振る動作（否定や不満のイントネーション）を表します。
+      </p>
+    </div>
+  </div>
+
+</div>
 
 ---
 

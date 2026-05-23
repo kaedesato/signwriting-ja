@@ -18,7 +18,7 @@ SignWritingには数百種類もの手の形（手形状）の記号が存在し
       <fsw-symbol symbol="S10000" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
     </div>
     <div style="flex: 1; min-width: 250px;">
-      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-violet);">① 握り拳 (Closed Fist)</h4>
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">① 握り拳 (Closed Fist)</h4>
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
         <strong>形状記号</strong>：正方形（四角）<br/>
         <strong>意味</strong>：すべての指先が手のひらにしっかりと触れて、握り込んでいる状態を表します。<br/>
@@ -32,7 +32,7 @@ SignWritingには数百種類もの手の形（手形状）の記号が存在し
       <fsw-symbol symbol="S10e00" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
     </div>
     <div style="flex: 1; min-width: 250px;">
-      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-cyan);">② 開いた拳 (Open Fist)</h4>
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">② 開いた拳 (Open Fist)</h4>
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
         <strong>形状記号</strong>：真円（丸）<br/>
         <strong>意味</strong>：指先同士が優しく触れ合うか、ドーム状に丸まり、手のひらの中に丸い空間ができている状態を表します。<br/>
@@ -46,7 +46,7 @@ SignWritingには数百種類もの手の形（手形状）の記号が存在し
       <fsw-symbol symbol="S14c00" style="transform: scale(2.0); margin: 0;"></fsw-symbol>
     </div>
     <div style="flex: 1; min-width: 250px;">
-      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-violet);">③ 平らな手 (Flat Hand)</h4>
+      <h4 style="margin: 0 0 0.5rem 0; font-family: var(--sl-font-heading); font-size: 1.25rem; color: var(--brand-accent);">③ 平らな手 (Flat Hand)</h4>
       <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
         <strong>形状記号</strong>：先の尖った長方形（五角形）<br/>
         <strong>意味</strong>：すべての指がまっすぐに伸びてピタッと揃っている状態を表します。<br/>
