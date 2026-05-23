@@ -4,6 +4,9 @@
 
   // ビルドされた静的ファイルが出力されるフォルダを指定します（Astroの場合は ./dist です）
   "pages_build_output_dir": "./dist",
+  "assets": {
+    "directory": "./dist"
+  },
 
   // Cloudflare のランタイム互換日付を指定します
   "compatibility_date": "2026-05-23",
