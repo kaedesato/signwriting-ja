@@ -1,0 +1,18 @@
+{
+  "name": "Sutton式手話文字 (SignWriting) 日本語解説",
+  "short_name": "手話文字解説",
+  "description": "Sutton式手話文字（SignWriting）の日本語解説サイト。手話の記述・デジタル化の解説ツール。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#7f1d1d",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

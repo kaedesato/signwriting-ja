@@ -29,6 +29,32 @@ export default defineConfig({
 						href: 'https://unpkg.com/@sutton-signwriting/sgnw-components@latest/dist/sgnw-components/sgnw-components.css',
 					},
 				},
+				{
+					tag: 'link',
+					attrs: {
+						rel: 'manifest',
+						href: '/manifest.webmanifest',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						name: 'theme-color',
+						content: '#7f1d1d',
+					},
+				},
+				{
+					tag: 'script',
+					content: `
+						if ('serviceWorker' in navigator) {
+							window.addEventListener('load', () => {
+								navigator.serviceWorker.register('/sw.js')
+									.then(reg => console.log('PWA Service Worker registered!', reg))
+									.catch(err => console.error('PWA Service Worker registration failed:', err));
+							});
+						}
+					`,
+				},
 			],
 			customCss: [
 				'./src/styles/custom.css',
