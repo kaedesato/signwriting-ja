@@ -97,21 +97,19 @@ body {
   box-shadow: none;
 }
 
-/* Vector rendering sizing for Formal SignWriting */
+/* Vector rendering sizing for Formal SignWriting (MUJI Borderless Style) */
 fsw-sign, sgnw-sign, fsw-symbol, sgnw-symbol {
   display: inline-block;
   vertical-align: middle;
-  padding: 6px;
-  background: #ffffff !important; /* 手話文字の視認性確保のため白背景は維持 */
-  border-radius: 4px;
-  border: 1px solid var(--sl-color-hairline) !important;
-  box-shadow: none !important; /* 記号の影も廃止しシンプルに */
-  transition: border-color 0.2s ease;
+  padding: 2px;
+  background: #ffffff !important; /* 視認性（黒線矢印等の表示）を確保するため白背景は維持 */
+  border: none !important; /* 枠線を完全に消去 */
+  box-shadow: none !important;
   color: #000000 !important; /* 常に黒線 */
   
   /* 記号をグローバルで1.3倍に拡大 */
   transform: scale(1.3);
-  margin: 0.4rem 0.6rem;
+  margin: 0.3rem 0.5rem;
   transform-origin: center;
 }
 
@@ -126,7 +124,7 @@ fsw-sign::part(path), sgnw-sign::part(path), fsw-symbol::part(path), sgnw-symbol
 
 fsw-sign:hover, sgnw-sign:hover, fsw-symbol:hover, sgnw-symbol:hover {
   transform: scale(1.3); /* サイズ変更なし */
-  border-color: var(--brand-accent) !important;
+  border: none !important; /* ホバー時も枠線なし */
   box-shadow: none !important;
 }
 
